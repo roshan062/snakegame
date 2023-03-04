@@ -5,7 +5,7 @@ const foodSound = new Audio('./music/food.mp3');
 const gameOverSound = new Audio('./music/gameover.mp3');
 const moveSound = new Audio('./music/move.mp3');
 const musicSound = new Audio('./music/bg-music3.mp3');
-let speed = 10;
+let speed = 5;
 let lastPaintTime = 0;
 let snakeArr = [{ x: 5, y: 5 }];
 let food = { x: 11, y: 13 };
@@ -197,18 +197,6 @@ document.querySelector("#down").addEventListener('click', function(){
 
 
 
-// Setting Value of Hi-Score in local storage
-
-// let hiscore = localStorage.getItem("hiScore");
-// if (hiscore === null) {
-//     hiscoreval = 0;
-//     localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
-// }
-
-// else {
-//     hiscoreval = JSON.parse(hiscore);
-//     hiScoreNumber.innerHTML = "Hi-Score : " + hiscoreval;
-// }
 
 let hiscore = localStorage.getItem("hiscore");
 if (hiscore === null) {
