@@ -197,6 +197,18 @@ document.querySelector("#down").addEventListener('click', function(){
 
 
 
+// Setting Value of Hi-Score in local storage
+
+// let hiscore = localStorage.getItem("hiScore");
+// if (hiscore === null) {
+//     hiscoreval = 0;
+//     localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
+// }
+
+// else {
+//     hiscoreval = JSON.parse(hiscore);
+//     hiScoreNumber.innerHTML = "Hi-Score : " + hiscoreval;
+// }
 
 let hiscore = localStorage.getItem("hiscore");
 if (hiscore === null) {
